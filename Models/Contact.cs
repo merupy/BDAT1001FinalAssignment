@@ -14,6 +14,7 @@ namespace RoleBasedApplication.Models
         public string? State { get; set; }
         public string? Zip { get; set; }
         [DataType(DataType.EmailAddress)]
+        [Required]
         public string? Email { get; set; }
 
         public ContactStatus Status { get; set; }
